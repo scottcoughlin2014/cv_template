@@ -1,0 +1,175 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Scott Coughlin}} & Email: \href{mailto:}{s-coughlin@northwestern.edu}\\
+  \href{https://github.com/scottcoughlin2014}{Github: ~~github.com/scottcoughlin2014} & Mobile:~~~952-412-8566 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cardiff University}{Cardiff, United Kingdom}
+      {PhD, Physics: Gravitational Waves}{July 2017 - June 2019}
+    \resumeSubheading
+      {Cardiff University}{Cardiff, United Kingdom}
+      {Fulbright Scholar U.S. Student Program, MPhil, Physics: Gravitational Waves}{Sep 2014 - Sep 2015}
+    \resumeSubheading
+      {Northwestern University}{Evanston, Illinois}
+      {Bachelor of Arts in Mathematics, Economics, and Classics}{June 2010 - June 2014}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Technical Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Python, MATLAB, R, HTML, CSS, Bash Shell Scripting, C, C++, Fortran, JavaScript}
+	\resumeSubItem{Frameworks}{~~~~TensorFlow, Keras, Django}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Docker, Singularity, GIT, PostgreSQL, SQLite, Slurm}
+	\resumeSubItem{Platforms}{~~~~~~~Linux, High-Performance Computing, AWS}
+
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Northwestern University IT}{Northwestern University}
+    {Research Computing Services Computational Specialist}{Jan 2021 - Present}
+    \resumeItemListStart
+        \resumeItem{Consulting}{Consult with Northwestern researchers on how to perform their research on QUEST, Northwestern's High Performance Computing (HPC) cluster.}
+        \resumeItem{Software}{Assist with software installation and deployment on HPC systems.}
+        \resumeItem{Teaching}{Produce YouTube video series to help researchers understand HPC-related topics: \href{https://www.youtube.com/playlist?list=PLDzPlBW3jmQBwqxcKkn15KBbL0D-nBjq2}{Bash Scripting} and \href{https://www.youtube.com/playlist?list=PLDzPlBW3jmQBMEgAvd1i700Bd_Ia7XNfH}{Singularity}}
+	\resumeItemListEnd
+	\resumeSubheading{Northwestern University: Physics and Astronomy}{Northwestern University}
+	{Computational Research Specialist}{July 2019 -  Jan 2021}
+		\resumeItemListStart
+        \resumeItem{Teaching}
+          {Led software tutorials on topics including coding in Python/C/C++, using High Performance Computing resources, and using GitHub for version control and continuous integration.}
+        \resumeItem{Software}
+        {Assisted researchers with unit testing, continuous integration, and public release of their software packages on platforms such as PyPi and Anaconda.}
+        \resumeItem{Web Apps and Databases}
+        {Assisted with the deployment of web and database servers for storing and sharing data.}
+        \resumeItem{Parallelization}
+        {Aided researchers in making their software parallelizable through MPI and OpenMP.}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Gravity Spy}{Citizen Science project that combines machine learning and citizen science to efficiently classify loud transients in LIGO gravitational wave data. I wrote and deployed a Django web-app which allows users to compare similar images across the dataset. Links: \href{https://gravityspytools.ciera.northwestern.edu/}{Self-created similarity search web application}, \href{https://github.com/Gravity-Spy/gravityspytools/}{Web App Source Code}, \href{https://gravityspy.org/}{Project Home Page},  \href{https://gravity-spy.github.io/gravityspy-ligo-pipeline/}{Software Documentation}}
+\vspace{2pt}
+\resumeSubItem{NBA Jump}{A Django application to track the proficiency of NBA teams to score first and comparing our probably model with the lines set by sports betting websites. During the NBA regular season, this web app is hosted on AWS and deployed using the AWS Cloud Formation builder. Links: \href{https://github.com/scottcoughlin2014/nbajump}{Web App Source Code}}
+\vspace{2pt}
+\resumeSubItem{COSMIC}{An open source python library for enabling population synthesis, i.e. simulations that attempt to predict the distributions of objects in our current Universe. Links: \href{https://cosmic-popsynth.github.io/}{Software Documentation}}
+\vspace{2pt}
+\resumeSubItem{CMC}{An open-sourced N-body code for collisional stellar dynamics. The code is written in C and is parallelized using the Message Passing Interface (MPI), allowing it to run on workstations and distributed-memory high-performance computing clusters. Links: \href{https://clustermontecarlo.github.io/CMC-COSMIC/}{Software Documentation}}
+\vspace{2pt}
+\resumeSubItem{BRIGHT}{BRIGHT (Broad-band Repository for Investigating Gamma-ray burst Host galaxies Traits) is the largest and most informative catalogue of short- gamma-ray burst (SGRB) host galaxies. It includes over 60 SGRB hosts with their respective observational data, FITS images, stellar population properties, and several important quantities of the SGRB itself. Links: \href{https://bright.ciera.northwestern.edu/welcome/}{Website}, \href{https://github.com/CIERA-Transients/bright}{Django Code}}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{Paper}{Scott Coughlin, et al. Classifying the unknown: Discovering novel gravitational-wave detector glitches using similarity learning. Phys. Rev. D, 99:082002, Apr 2019}
+\vspace{2pt}
+\resumeSubItem{Paper}{Katelyn Breivik, Scott Coughlin, et al. COSMIC Variance in Binary Population Synthesis. 2019.}
+\resumeSubItem{Paper}{Carl L. Rodriguez, Newlin C. Weatherford, Scott C. Coughlin, et al. Modeling Dense Star Clusters in the Milky Way and beyond with the Cluster Monte Carlo Code. , 258(2):22, February 2022.}
+
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Honors and Awards}
+\begin{description}[font=$\bullet$]
+\item {The LIGO Laboratory Award for Excellence in Detector Characterization and Calibration Honorable Mention, 2018}
+\vspace{-5pt}
+\item {Special Breakthrough Prize in Fundamental Physics, 2016}
+\vspace{-5pt}
+\item {Fulbright Scholar U.S. Student Program, 2014-2015}
+
+\end{description}
+
+\end{document}
